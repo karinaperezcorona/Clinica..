@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DoctorLand - Clínica Médica Especializada</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/miEstilo.css">
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container">
+      
+      
+      <a class="navbar-brand text-white fw-bold d-flex align-items-center gap-2" href="#">
+        <i class="bi bi-hospital fs-3"></i>
+        <span class="fs-4">DoctorLand</span>
+      </a>
+
+      <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+
+    
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#citas">Citas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#especialistas">Especialistas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#servicios">Servicios (10)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Consejos</a>
+          </li>
+        </ul>
+
+       
+        <div class="d-flex align-items-center justify-content-center gap-2 mt-3 mt-lg-0">
+          <a href="#servicios" class="btn btn-custom-outline">Buscar</a>
+
+          <button type="button" class="btn btn-custom-solid" data-bs-toggle="modal" data-bs-target="#modalCita">
+            <i class="bi bi-calendar2-check me-1"></i> Agendar Cita
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <header id="inicio" class="hero-section">
+    <div class="hero-overlay"></div>
+    
+    <div class="container hero-content">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-7">
+          <span class="badge bg-light text-dark mb-3 px-3 py-2 rounded-pill fw-semibold">
+            <i class="bi bi-shield-check text-success me-1"></i> Atención Médica Certificada
+          </span>
+
+          <h1 class="hero-title mb-3">
+            Cuidamos de ti y de tu familia con total confianza
+          </h1>
+
+          <p class="hero-subtitle mb-4">
+            Brindamos atención integral de primer nivel con especialistas altamente calificados, tecnología avanzada y un trato humano y cercano.
+          </p>
+
+          <div class="d-flex flex-wrap gap-3 mb-4">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+ 
+  <section id="citas" class="py-5">
+    <div class="container py-lg-4">
+      
+     
+      <div class="text-center mb-5">
+        <h2 class="seccion-titulo">Doctor Alexis</h2>
+        <p class="seccion-subtitulo">Atención médica rápida, segura y con los más altos estándares de calidad</p>
+      </div>
+
+      <div class="row align-items-center g-4">
+  
+        <div class="col-12 col-lg-6">
+          <span class="subtitulo-naranja">Citas Médicas a tu Medida</span>
+          <h3 class="fw-bold mb-3">Tu salud en las mejores manos profesionales</h3>
+          <p class="text-muted mb-4">
+            En nuestra clínica nos esforzamos para que tu consulta sea cómoda, puntual y eficiente. Contamos con médicos de diversas disciplinas listos para atenderte a ti y a tus seres queridos.
+          </p>
+
+        
+          <div class="lista-citas-item">
+            <div class="icono-check"><i class="bi bi-check-lg"></i></div>
+            <span>Médicos certificados con amplia experiencia hospitalaria</span>
+          </div>
+          <div class="lista-citas-item">
+            <div class="icono-check"><i class="bi bi-check-lg"></i></div>
+            <span>Agendamiento en línea sin esperas ni filas innecesarias</span>
+          </div>
+          <div class="lista-citas-item">
+            <div class="icono-check"><i class="bi bi-check-lg"></i></div>
+            <span>Instalaciones modernas y equipos de última tecnología</span>
+          </div>
+          <div class="lista-citas-item">
+            <div class="icono-check"><i class="bi bi-check-lg"></i></div>
+            <span>Seguimiento personalizado después de cada consulta</span>
+          </div>
+
+          
+          <div class="mt-4">
+            <button class="btn btn-medico" data-bs-toggle="modal" data-bs-target="#modalCita">
+              Reservar Consulta
+            </button>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <img src="imagenes/citas-medicas.jpg" alt="Doctores atendiendo" class="imagen-redondeada">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="especialistas" class="py-5 seccion-fondo-suave">
+    <div class="container py-lg-4">
+      <div class="row align-items-center g-4">
+        
+        <div class="col-12 col-md-5 col-lg-4">
+          <div class="position-relative">
+            <img src="imagenes/doctora.jpg" alt="Doctora Especialista" class="imagen-redondeada">
+            <span class="badge bg-success position-absolute top-0 end-0 m-3 px-3 py-2 rounded-pill">
+              Especialistas
+            </span>
+          </div>
+        </div>
+
+     
+        <div class="col-12 col-md-7 col-lg-8">
+          <h2 class="seccion-titulo mb-2">Doctores</h2>
+          <p class="text-muted mb-4">Un equipo multidisciplinario comprometido con tu bienestar y salud integral.</p>
+
+          <div class="row g-3">
+            
+          
+            <div class="col-12 col-sm-6">
+              <div class="tarjeta-especialidad">
+                <div class="icono-especialista"><i class="bi bi-heart-pulse"></i></div>
+                <h5>Medicina General</h5>
+                <p>Diagnóstico preventivo, chequeos periódicos y control integral para toda la familia.</p>
+              </div>
+            </div>
+
+          
+            <div class="col-12 col-sm-6">
+              <div class="tarjeta-especialidad">
+                <div class="icono-especialista"><i class="bi bi-emoji-smile"></i></div>
+                <h5>Pediatría Especializada</h5>
+                <p>Cuidado cariñoso y seguimiento del crecimiento de bebés, niños y adolescentes.</p>
+              </div>
+            </div>
+
+          
+            <div class="col-12 col-sm-6">
+              <div class="tarjeta-especialidad">
+                <div class="icono-especialista"><i class="bi bi-bandaid"></i></div>
+                <h5>Atención de Urgencias</h5>
+                <p>Respuesta rápida y profesionales listos para cualquier eventualidad las 24 horas.</p>
+              </div>
+            </div>
+
+          
+            <div class="col-12 col-sm-6">
+              <div class="tarjeta-especialidad">
+                <div class="icono-especialista"><i class="bi bi-shield-plus"></i></div>
+                <h5>Cirugía y Tratamientos</h5>
+                <p>Procedimientos menores y quirúrgicos en quirófanos totalmente equipados.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-5">
+    <div class="container py-lg-4">
+      <div class="row align-items-center g-4">
+        
+       
+        <div class="col-12 col-lg-6">
+          <span class="subtitulo-naranja">Precios y Cobertura</span>
+    
+          <p class="text-muted">
+            Creemos firmemente que la salud de calidad debe ser accesible para todos. Contamos con planes transparentes, convenios con las principales aseguradoras y paquetes especiales para familias y empresas.
+          </p>
+          <p class="text-muted">
+            Solicita tu presupuesto sin ningún compromiso y descubre las facilidades de pago a meses sin intereses en tratamientos seleccionados.
+          </p>
+          <div class="mt-4">
+            <button class="btn btn-medico" data-bs-toggle="modal" data-bs-target="#modalCita">
+              Agendar Consulta Accesible
+            </button>
+          </div>
+        </div>
+
+       
+        <div class="col-12 col-lg-6">
+          <img src="imagenes/doctor-consulta.jpg" alt="Doctor en consulta" class="imagen-redondeada">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios" class="py-5 seccion-fondo-suave">
+    <div class="container py-lg-4">
+      
+     
+      <div class="text-center mb-4">
+        <span class="subtitulo-naranja">Catálogo Médico Completo</span>
+        <h2 class="seccion-titulo">Nuestros 10 Productos y Servicios</h2>
+        <p class="seccion-subtitulo">
+          Soluciones de salud diseñadas para cada necesidad médica
+        </p>
+
+        
+      </div>
+
+      <div class="row g-4" id="gridServicios">
+
+        <div class="col-12 col-md-6 col-lg-4 item-servicio" data-categoria="consultas">
+          <div class="tarjeta-servicio">
+            <div class="icono-servicio-circulo"><i class="bi bi-clipboard2-pulse"></i></div>
+            <span class="badge bg-info-subtle text-dark mb-2 align-self-center px-3 py-1 rounded-pill">Consulta</span>
+            <h4>1. Consulta de Medicina General</h4>
+            <p>Evaluación física completa, diagnóstico inicial, receta médica y orientación preventiva.</p>
+            <div class="precio-servicio">$350 MXN</div>
+          
+          </div>
+        </div>
+
+        
+        <div class="col-12 col-md-6 col-lg-4 item-servicio" data-categoria="especialidades">
+          <div class="tarjeta-servicio">
+            <div class="icono-servicio-circulo"><i class="bi bi-balloon-heart"></i></div>
+            <span class="badge bg-warning-subtle text-dark mb-2 align-self-center px-3 py-1 rounded-pill">Especialidad</span>
+            <h4>2. Pediatría Integral</h4>
+            <p>Control del niño sano, esquema de vacunación oficial y atención a padecimientos infantiles.</p>
+            <div class="precio-servicio">$600 MXN</div>
+           
+          </div>
+        </div>
+
+        
+        <div class="col-12 col-md-6 col-lg-4 item-servicio" data-categoria="especialidades">
+          <div class="tarjeta-servicio">
+            <div class="icono-servicio-circulo"><i class="bi bi-heart-pulse-fill"></i></div>
+            <span class="badge bg-danger-subtle text-dark mb-2 align-self-center px-3 py-1 rounded-pill">Especialidad</span>
+            <h4>3. Cardiología Clínica</h4>
+            <p>Revisión cardiovascular, electrocardiograma y monitoreo de presión arterial.</p>
+            <div class="precio-servicio">$800 MXN</div>
+           
+          </div>
+        </div>
+
+        
+        <div class="col-12 col-md-6 col-lg-4 item-servicio" data-categoria="consultas">
+          <div class="tarjeta-servicio">
+            <div class="icono-servicio-circulo"><i class="bi bi-emoji-smile-fill"></i></div>
+            <span class="badge bg-info-subtle text-dark mb-2 align-self-center px-3 py-1 rounded-pill">Dental</span>
+            <h4>4. Odontología y Limpieza</h4>
+            <p>Limpieza ultrasónica profunda, revisión de caries, aplicación de flúor y blanqueamiento.</p>
+            <div class="precio-servicio">$450 MXN</div>
+            
+          </div>
+        </div>
+
+       
+        <div class="col-12 col-md-6 col-lg-4 item-servicio" data-categoria="especialidades">
+          <div class="tarjeta-servicio">
+            <div class="icono-servicio-circulo"><i class="bi bi-sun"></i></div>
+            <span class="badge bg-warning-subtle text-dark mb-2 align-self-center px-3 py-1 rounded-pill">Especialidad</span>
+            <h4>5. Dermatología Clínica</h4>
+            <p>Tratamiento para acné, manchas solares, lunares sospechosos y salud general de la piel.</p>
+            <div class="precio-servicio">$700 MXN</div>
+            
+          </div>
+        </div>
+
+       
+        <div class="col-12 col-md-6 col-lg-4 item-servicio" data-categoria="estudios">
+          <div class="tarjeta-servicio">
+            <div class="icono-servicio-circulo"><i class="bi bi-droplet-half"></i></div>
+            <span class="badge bg-primary-subtle text-dark mb-2 align-self-center px-3 py-1 rounded-pill">Estudio</span>
+            <h4>6. Laboratorio y Análisis</h4>
+            <p>Biometría hemática, química sanguínea, perfil lipídico y examen general de orina con entrega digital.</p>
+            <div class="precio-servicio">$280 MXN</div>
+           
+          </div>
+        </div>
+
+       
+        <div class="col-12 col-md-6 col-lg-4 item-servicio" data-categoria="estudios">
+          <div class="tarjeta-servicio">
+            <div class="icono-servicio-circulo"><i class="bi bi-film"></i></div>
+            <span class="badge bg-primary-subtle text-dark mb-2 align-self-center px-3 py-1 rounded-pill">Estudio</span>
+            <h4>7. Radiología y Rayos X</h4>
+            <p>Imágenes digitales de alta definición para huesos, tórax y articulaciones con reporte médico.</p>
+            <div class="precio-servicio">$500 MXN</div>
+           
+          </div>
+        </div>
+
+       
+        <div class="col-12 col-md-6 col-lg-4 item-servicio" data-categoria="especialidades">
+          <div class="tarjeta-servicio">
+            <div class="icono-servicio-circulo"><i class="bi bi-gender-female"></i></div>
+            <span class="badge bg-danger-subtle text-dark mb-2 align-self-center px-3 py-1 rounded-pill">Especialidad</span>
+            <h4>8. Ginecología y Obstetricia</h4>
+            <p>Checkup femenino integral, ultrasonido pélvico y control de embarazo.</p>
+            <div class="precio-servicio">$750 MXN</div>
+           
+          </div>
+        </div>
+
+       
+        <div class="col-12 col-md-6 col-lg-4 item-servicio" data-categoria="consultas">
+          <div class="tarjeta-servicio">
+            <div class="icono-servicio-circulo"><i class="bi bi-eye"></i></div>
+            <span class="badge bg-info-subtle text-dark mb-2 align-self-center px-3 py-1 rounded-pill">Consulta</span>
+            <h4>9. Oftalmología y Salud Visual</h4>
+            <p>Examen de agudeza visual, graduación de lentes, detección de cataratas y fondo de ojo.</p>
+            <div class="precio-servicio">$550 MXN</div>
+           
+          </div>
+        </div>
+
+        
+        <div class="col-12 col-md-6 col-lg-4 item-servicio" data-categoria="especialidades">
+          <div class="tarjeta-servicio">
+            <div class="icono-servicio-circulo"><i class="bi bi-activity"></i></div>
+            <span class="badge bg-warning-subtle text-dark mb-2 align-self-center px-3 py-1 rounded-pill">Especialidad</span>
+            <h4>10. Fisioterapia y Rehabilitación</h4>
+            <p>Terapia muscular, recuperación de lesiones deportivas, rehabilitación postoperatoria y masajes terapéuticos.</p>
+            <div class="precio-servicio">$400 MXN</div>
+      
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="blog" class="py-5 seccion-fondo-suave">
+    <div class="container py-lg-4">
+      
+      <div class="text-center mb-5">
+        <span class="subtitulo-naranja">Aprende y Cuídate</span>
+        <h2 class="seccion-titulo">Consejos de Salud y Artículos</h2>
+        <p class="seccion-subtitulo">Recomendaciones de nuestros especialistas para tu vida diaria</p>
+      </div>
+
+      <div class="row g-4">
+        
+        <!-- Artículo 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="tarjeta-blog">
+            <img src="imagenes/blog1.jpg" alt="Consejos de nutrición">
+            <div class="tarjeta-blog-cuerpo">
+              <h5>Nutrición y Sistema Inmune</h5>
+              <p>Descubre qué alimentos ayudan a fortalecer tus defensas de manera natural durante el cambio de estación.</p>
+              <a>Leer artículo completo</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artículo 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="tarjeta-blog">
+            <img src="imagenes/blog2.jpg" alt="Chequeos preventivos">
+            <div class="tarjeta-blog-cuerpo">
+              <h5>La importancia de los chequeos</h5>
+              <p>Por qué un análisis anual puede prevenir enfermedades crónicas y salvar vidas a tiempo.</p>
+              <a>Leer artículo completo </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
+          <div class="tarjeta-blog">
+            <img src="imagenes/blog3.jpg" alt="Telemedicina y consultas">
+            <div class="tarjeta-blog-cuerpo">
+              <h5>Salud Digital a tu Alcance</h5>
+              <p>Aprovecha las consultas virtuales y el expediente electrónico desde la comodidad de tu hogar.</p>
+              <a >Leer artículo completo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  
+ <footer class=" text-black p-4 " >
+  <div class="contanier text-center" >
+    <h6>Nuestras Redes Sociales</h6>
+    <div class="d-flex justify-content-center">
+      <a href="" class="text-black fs-4">
+
+      </a>
+
+      <a href="" class="fs-4">
+          <i class="bi bi-facebook"></i>
+      </a>
+
+      <a href="" class="fs-4">
+         <i class="bi bi-instagram"></i>
+
+      </a>
+
+      <a href="" class="fs-4">
+
+      </a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
